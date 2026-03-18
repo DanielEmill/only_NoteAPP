@@ -1,0 +1,25 @@
+GET http://localhost:3000/api/notas
+
+###
+
+GET http://localhost:3000/api/notas/1132
+
+
+###
+POST http://localhost:3000/api/notas
+Content-Type: application/json
+
+{
+    "title": "Nota de teste",
+    "description": "Conteúdo da nota de teste"
+}
+###
+DELETE  http://localhost:3000/api/notas/1010
+###
+PUT http://localhost:3000/api/notas/1132
+Content-Type: application/json
+
+{
+    "title": "Nota de teste atualizada",
+    "description": "Conteúdo atualizado da nota de teste"
+}
